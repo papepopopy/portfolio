@@ -3,7 +3,7 @@
     font-family: 'NotoSansKR';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/NotoSansKR-Regular.ttf') format('truetype');
+    src: url('/portfolio-main/fonts/NotoSansKR-Regular.ttf') format('truetype');
 }
 * {
     padding: 0;
@@ -37,6 +37,7 @@ h3 {
     font-size: 18px;
     margin-bottom: 5px;
     font-weight: 600;
+    line-height: 1.5;
 }
 h4 {
     font-size: 14px;
@@ -148,9 +149,6 @@ header {
     display: flex;
     gap: 30px;
 }
-.mypage-bottom-box {
-    margin-top: 50px;
-}
 .sub-container .tab-menu {
     display: flex;
     border-bottom: 1px solid #DDD;
@@ -206,11 +204,89 @@ header {
 .mypage-star {
     font-size: 14px;
     color: #333;
-    background: url(/img/star-icon.png) no-repeat left 3px;
+    background: url(/portfolio-main/img/star-icon.png) no-repeat left 3px;
     padding-left: 20px;
     float: right;
 }
 .pro-content .mail {
     margin-bottom: 5px;
     font-size: 18px;
+}
+.login {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* memberjoin */
+.join-box {
+    margin-top: 95px;
+}
+.join-box > div {
+    position: relative;
+}
+.join-box > div.active {
+    color: #333;
+}
+.join-box > div {
+    color: #aaa;
+}
+.join-box > div:nth-child(1).active:after {
+    background: #38aed6;
+    color: #fff;
+    border: 1px solid #38aed6;
+}
+.join-box > div:nth-child(1):after {
+    content: "1";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    bottom: 30px;
+    left: 38%;
+    background: #ffffff;
+    border: 1px solid #aaa;
+    transition: all .3s ease;
+    color: #aaa;
+    line-height: 46px;
+}
+.join-box > div:nth-child(2).active:after {
+    background: #38aed6;
+    color: #fff;
+    border: 1px solid #38aed6;
+}
+.join-box > div:nth-child(2):after {
+    content: "2";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    bottom: 30px;
+    left: 38%;
+    background: #ffffff;
+    border: 1px solid #aaa;
+    transition: all .3s ease;
+    color: #aaa;
+    line-height: 46px;
+}
+.join-box > div:nth-child(3).active:after {
+    background: #38aed6;
+    color: #fff;
+    border: 1px solid #38aed6;
+}
+.join-box > div:nth-child(3):after {
+    content: "3";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    bottom: 30px;
+    left: 38%;
+    background: #ffffff;
+    border: 1px solid #aaa;
+    transition: all .3s ease;
+    color: #aaa;
+    line-height: 46px;
 }
