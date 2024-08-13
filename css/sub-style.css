@@ -48,6 +48,208 @@ h4 {
     padding: 70px 0;
 }
 
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-inner .logo-box {
+    background-color: #38aed6;
+    height: 100%;
+}
+.header-inner .logo-box a {
+    text-align: center;
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+.header-inner .menu-box {
+    display: none;
+}
+
+.header-inner .logo-box img {
+    width: 55px;
+}
+.header-inner .link-box {
+    display: flex;
+    margin-bottom: 28px;
+    gap: 20px;
+}
+
+.header-inner .menu-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+    gap: 100px;
+}
+
+.menu-list>li {
+    padding: 39px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+.link-box>li {
+    padding: 42px 0;
+}
+.link-box>li>a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* 메뉴 active 상태 */
+.header-inner .menu-box.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    width: 450px;
+    height: 100vh;
+    background-color: #38aed6;
+    padding: 20px;
+}
+.header-inner .menu-box.active .menu-list {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px #fff solid;
+}
+.menu-box.active .menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+}
+.menu-box.active .menu-list>li {
+    padding: 15px 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+.menu-box.active .menu-list>li a {
+    color: #fff;
+}
+.menu-box.active .link-box>li {
+    padding: 0;
+}
+.menu-box.active .link-box>li>a {
+    color: #dcf6ff;
+}
+.sub-menu01 {
+    display: none;
+}
+.sub-menu01>li>a {
+    font-size: 18px;
+    font-weight: 700;
+}
+.sub-menu02>li>a {
+    font-size: 14px;
+    font-weight: 400;
+}
+.header-inner {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.header-inner .menu_open {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    align-content: center;
+}
+.header-inner .menu_open span {
+    display: block;
+    background-color: #38aed6;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 6px;
+}
+.header-inner .menu-box .menu-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+.header-inner .menu_close {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    align-content: center;
+    position: relative;
+}
+.header-inner .menu_close span {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+}
+.header-inner .menu_close span:nth-child(1) {
+    transform: rotate(47deg);
+    position: absolute;
+}
+.header-inner .menu_close span:nth-child(2) {
+    transform: rotate(135deg);
+    position: absolute;
+}
+
+@media (min-width: 576px) {
+    .header-inner {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .header-inner {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .header-inner {
+        max-width:960px
+    }
+    .header-inner .logo-box img {
+        width: 75%;
+    }
+    .header-inner .logo-box a {
+        text-align: center;
+        padding: 35px 15px;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-inner {
+        max-width:1140px
+    }
+    .header-inner .menu-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 75px;
+    }
+    .header-inner .menu_open {
+        display: none;
+    }
+    .header-inner .menu_open span {
+        display: none;
+    }
+    /* 메뉴 active 상태 */
+    .header-inner .menu-box.active {
+        display: none;
+    }
+}
+@media (min-width: 1400px) {
+    header.container {
+        max-width: 1600px;
+    }
+    .header-inner {
+        max-width:1320px
+    }
+}
+
+
 /* 마이페이지 스타일 */
 .mypage-top-box img {
     width: 160px;
@@ -210,3 +412,120 @@ h4 {
     color: #aaa;
     line-height: 46px;
 }
+.mali-img img {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    display: block;
+    border-radius: 70px;
+}
+
+/* Board */
+/* 박스안 이미지 가득차게 수평 수직 가운데 정렬 */
+.sub040100 .imgBox {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 300px;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+}
+
+/* 태그 창을 가운데 배치하기 위한 설정 */
+.sub040100 .nav-tabs {
+position: relative;
+}
+.sub040100 .orderBy {
+position: absolute;
+}
+
+.sub040100 .tags {
+height: 50px;
+line-height: 50px;
+}
+
+
+/* Create */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+.sub050100 .categoryBox select, .UIBox button, .buttonBox button {
+    color: gray;
+}
+.sub050100 .contentBox textarea {
+    height: 500px; width: 100%;
+}
+
+/* 아이콘 좌우반전 */
+.sub050100 .scaleX-R{
+    transform: scaleX(-1);
+}
+.sub050100 .UIBox button {
+    border: none;
+    background-color: white;
+}
+
+/* FestivalBoard */
+
+.sub050100 .dates > li > a , .days > li > a {
+    border: none;
+}
+.sub050100 .mybtn {
+    padding: 5px;
+    background-color: white;
+    border: none;
+}
+
+/* 박스안 이미지 가득차게 수평 수직 가운데 정렬 1 */
+.sub050200 .postImgBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*  박스안 이미지 가득차게 수평 수직 가운데 정렬 2
+.sub050200 .postImgBox {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+*/
+
+/* FestivalPost */
+/* v-line 정보 창 세로 줄 */
+.sub050201 .v-line {
+    border-left : 1px solid lightgray;
+    height : 130px;
+    margin: 0px 30px;
+}
+
+/* 홈페이지 버튼 설정 */
+.sub050201 .btnHomepage {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+}
+
+/* 다운로드, 목록 버튼 설정 */
+.sub050201 .btnDownload, .btnList {
+    background-color: white;
+    color: rgb(45, 45, 45);
+    padding: 10px 30px;
+}
+
+/* modify */
