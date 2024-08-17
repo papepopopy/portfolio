@@ -81,7 +81,7 @@ header {
     display: flex;
     justify-content: space-around;
     margin-bottom: 28px;
-    gap: 100px;
+    gap: 80px;
 }
 
 .menu-list>li {
